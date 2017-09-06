@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'sessions/new', to: 'sessions#new', as: 'new_session'
+
   get '/', to: 'products#index', as: 'products'
   post '/add', to: 'products#add', as: 'add_product'
   # The priority is based upon order of creation: first created -> highest priority.
